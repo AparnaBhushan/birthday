@@ -25,7 +25,7 @@ function StartAtFirstPage() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "") || "/"}>
       <StartAtFirstPage />
       <Routes>
         <Route path="/" element={<SurprisePage />} />
