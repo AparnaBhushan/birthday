@@ -1,0 +1,95 @@
+.letter-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 48px 20px;
+  background: linear-gradient(130deg, #161522, #30202d 52%, #17312e);
+  color: #fff6f2;
+}
+
+.letter-content {
+  width: min(760px, 100%);
+  text-align: center;
+}
+
+.letter-eyebrow {
+  margin: 0 0 10px;
+  color: #ffd27a;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.letter-content h1 {
+  margin: 0 0 28px;
+  color: #fff1e8;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.birthday-letter {
+  width: 100%;
+  padding: 44px clamp(24px, 6vw, 64px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 5px solid #c44f73;
+  background: #fff7f0;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+  color: #35232b;
+  text-align: left;
+}
+
+.typed-letter {
+  min-height: 330px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  line-height: 1.85;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  margin-left: 2px;
+  background: #c44f73;
+  vertical-align: text-bottom;
+  animation: cursor-blink 0.85s steps(2, start) infinite;
+}
+
+.letter-next-button {
+  min-height: 46px;
+  margin-top: 24px;
+  border: 1px solid rgba(255, 223, 244, 0.55);
+  border-radius: 999px;
+  padding: 11px 22px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff1e8;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.letter-next-button:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+@keyframes cursor-blink {
+  to { visibility: hidden; }
+}
+
+@media (max-width: 560px) {
+  .letter-content h1 {
+    font-size: 2rem;
+  }
+
+  .birthday-letter {
+    padding: 30px 22px;
+  }
+
+  .typed-letter {
+    min-height: 390px;
+    font-size: 1.05rem;
+  }
+}
